@@ -1,0 +1,30 @@
+package com.tagit.springtraining.constructorinjection;
+
+public class User 
+{
+	public String userName;
+	public Car car;
+	
+	User(String userName, Car car)
+	{
+		super();
+		this.userName = userName;
+		this.car = car;
+	}	
+	
+	public String getUserName()
+	{
+		return userName;
+	}
+	
+	public Car getCar()
+	{
+		return car;
+	}
+	
+	@Override
+	public String toString()
+	{
+		return "User [userName = " + userName + ", car=" + car + "]";
+	}
+}
