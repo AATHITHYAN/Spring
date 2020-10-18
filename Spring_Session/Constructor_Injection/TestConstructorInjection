@@ -1,0 +1,14 @@
+package com.tagit.springtraining.constructorinjection;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class TestConstructorInjection
+{
+	public static void main(String[] args) 
+	{
+		ApplicationContext context = new ClassPathXmlApplicationContext("coninj.xml");
+		User u = (User)context.getBean("user");
+		System.out.println(u.getUserName() + " owning " + u.getCar());
+	}
+}
