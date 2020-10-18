@@ -1,0 +1,35 @@
+package com.tagit.springtraining.constructorinjection;
+
+public class Car 
+{
+	public String name;
+	public String model;
+	
+	public Car()
+	{
+		super();
+	}
+	
+	public Car(String name, String model)
+	{
+		super();
+		this.name = name;
+		this.model = model;
+	}
+	
+	public String getName()
+	{
+		return name;
+	}
+	
+	public String getModel()
+	{
+		return model;
+	}
+	
+	@Override
+	public String toString()
+	{
+		return "Car [name = " + name + ", model = " + model + "]";
+	}
+}
