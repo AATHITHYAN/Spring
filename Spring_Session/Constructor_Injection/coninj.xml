@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+        <bean id="car" class="com.tagit.springtraining.constructorinjection.Car">
+        
+        	<constructor-arg name = "name" value = "Ford"></constructor-arg>
+        	<constructor-arg name = "model" value = "Figo"></constructor-arg>
+        </bean>
+        
+        <bean id="user" class="com.tagit.springtraining.constructorinjection.User">
+        
+        <constructor-arg name = "userName" value = "Aathithyan"></constructor-arg>
+        <constructor-arg name ="car" ref = "car"></constructor-arg>
+        </bean>
+        
+</beans>
